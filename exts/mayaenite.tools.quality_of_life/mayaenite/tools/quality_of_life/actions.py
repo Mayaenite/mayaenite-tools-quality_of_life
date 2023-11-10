@@ -40,13 +40,13 @@ class QOL_Actions:
 		self.add_action(omni_graph_node_control_tools.qol_tool_align_selected_graph_nodes_vertical_mid,"NUMPAD_5")
 		self.add_action(omni_graph_node_control_tools.qol_tool_align_selected_graph_nodes_vertical_right,"NUMPAD_6")
 		
-		self.add_action(omni_graph_node_control_tools.qol_tool_align_selected_graph_nodes_horizontal_top,"CTRL + NUMPAD_4")
+		self.add_action(omni_graph_node_control_tools.qol_tool_align_selected_graph_nodes_horizontal_top,"NUMPAD_8")
 		self.add_action(omni_graph_node_control_tools.qol_tool_align_selected_graph_nodes_horizontal_mid,"CTRL + NUMPAD_5")
-		self.add_action(omni_graph_node_control_tools.qol_tool_align_selected_graph_nodes_horizontal_bot,"CTRL + NUMPAD_6")
+		self.add_action(omni_graph_node_control_tools.qol_tool_align_selected_graph_nodes_horizontal_bot,"NUMPAD_2")
 		
 		self.add_action(omni_graph_node_control_tools.qol_tool_set_selected_graph_nodes_expansion_state_close,"NUMPAD_0")
 		self.add_action(omni_graph_node_control_tools.qol_tool_set_selected_graph_nodes_expansion_state_min,"NUMPAD_1")
-		self.add_action(omni_graph_node_control_tools.qol_tool_set_selected_graph_nodes_expansion_state_open,"NUMPAD_2")
+		self.add_action(omni_graph_node_control_tools.qol_tool_set_selected_graph_nodes_expansion_state_open,"NUMPAD_3")
 		self.add_action(omni_graph_node_control_tools.qol_tool_set_selected_graph_nodes_expansion_state_toggle,"NUMPAD_DEL")
 		
 	def _deregister_Actions(self):
