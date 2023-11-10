@@ -3,6 +3,7 @@
 Double clicking a graph node material node or partical graph in the stage tree will open it in its respecive graph
 
 ***Functionality By Hotkey***.
+
 ![Alt text](exts/mayaenite.tools.quality_of_life/data/align.gif)
 - `Number Pad 4` - Align Selected Graph Nodes Vertical To Left Most Node.
 - `Number Pad 5` - Align Selected Graph Nodes Vertical To The Avarage Mid Point.
