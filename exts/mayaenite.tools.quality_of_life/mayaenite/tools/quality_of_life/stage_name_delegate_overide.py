@@ -6,6 +6,7 @@ import omni.graph.window.action
 import omni.graph.window.particle.system
 import omni.kit.window.material_graph
 import omni.graph.window.generic
+import omni.anim.graph.ui.scripts.extension
 from omni.kit.viewport.utility import frame_viewport_selection, get_active_viewport
 import functools
 from .utils import get_Window
@@ -13,7 +14,10 @@ from .utils import get_Window
 #-------------------------------------------------------------------------------
 def _show_particle_graph(*args):
 	omni.graph.window.particle.system.ParticleGraphExtension.show_graph([args[0]])
-
+#-------------------------------------------------------------------------------
+def _show_animation_graph(*args):
+	""""""
+	omni.anim.graph.ui.scripts.extension.ext._graph_window.open_graph(args[0])
 #-------------------------------------------------------------------------------
 def _show_action_graph(*args):
 	omni.graph.window.action.action_graph_extension.ActionGraphExtension.show_graph([args[0]])
@@ -75,6 +79,9 @@ class NameColumnDelegate(omni.kit.widget.stage.stage_extension.NameColumnDelegat
 				
 				elif item.type_name == 'Material':
 					image.set_mouse_double_clicked_fn(functools.partial(_show_material_graph, item.prim ))
+				
+				elif item.type_name == 'AnimationGraph':
+					image.set_mouse_double_clicked_fn(functools.partial(_show_animation_graph, item.prim ))
 					
 				elif item.type_name == 'OmniGraph':
 					graph = og.get_graph_by_path(item.path.pathString)
