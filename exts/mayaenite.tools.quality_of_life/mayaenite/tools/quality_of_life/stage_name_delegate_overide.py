@@ -23,7 +23,7 @@ def _show_action_graph(*args):
 	omni.graph.window.action.action_graph_extension.ActionGraphExtension.show_graph([args[0]])
 #-------------------------------------------------------------------------------
 def _show_generic_graph(*args):
-	omni.graph.window.action.action_graph_extension.ActionGraphExtension.show_graph([args[0]])
+	omni.graph.window.generic.generic_graph_extension._extension_instance.show_graph([args[0]])
 
 #-------------------------------------------------------------------------------
 def _show_material_graph(*args):
